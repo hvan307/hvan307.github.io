@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  height: 100hv;
+  align-items: stretch;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu {
+  background-color: black;
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 10px;
+  color: white;
+  display: none;
+}
+
+.title {
+  font-family: 'Codystar', cursive;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+}
+
+main {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+h2 {
+  font-family: 'Codystar', cursive;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+.surname {
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(25px);
+  }
+  50% {
+    transform: translate(50px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.name {
+  animation: move-opposite 3s infinite;
+}
+
+@keyframes move-opposite {
+  0% {
+    transform: translate(-10px);
+  }
+  50% {
+    transform: translate(-20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+p {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 12px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+}
+
+#contacts {
+  text-align: center;
+}
+
+h3 {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (min-width: 600px) {
+  .menu {
+    display: block;
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+  }
+  div {
+    cursor: url(images/kissclipart-selection-and-cursors-icon-cursor-icon-89ded83465d60f8c.png),auto;
+  }
+}
