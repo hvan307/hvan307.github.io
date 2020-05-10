@@ -3,7 +3,6 @@ function main() {
   const topNav = document.querySelector('.top-nav')
 
   menuToggler.addEventListener('click', () => {
-    // console.log('hello')
     menuToggler.classList.toggle('open')
     topNav.classList.toggle('open')
   })
