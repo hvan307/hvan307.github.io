@@ -16,6 +16,12 @@ body {
   background-size: cover;
 }
 
+.hero-background {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -23,19 +29,29 @@ a {
 
 h2 {
   font-family: "Lexend Zetta", sans-serif;
-  color: white;
+  color: #8686df;
   font-weight: 800;
   text-align: center;
   font-size: 2rem;
+  text-shadow: 1px 1px 1px #d7d7fa;
+  
 }
 
-h2:hover,
-h2:focus {
+h3 {
+  font-family: "Lexend Zetta", sans-serif;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1rem;
+}
+
+h3:hover,
+h3:focus {
   background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 1rem;
+  padding: .3rem;
 }
 
 h3 {
@@ -46,6 +62,16 @@ h3 {
 p {
   font-family: "Lexend Zetta", sans-serif;
   font-size: 1rem;
+}
+
+figure {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+img {
+  border-radius: 10px;
+  border: 5px solid rgba(255, 255, 255, 0.411);
 }
 
 /* Header */
@@ -168,9 +194,42 @@ p {
   user-select: none;
 }
 
+h1.surname {
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(20px);
+    }
+    100% {
+      transform: translate(0);
+    }
+}
+
+h1.name {
+  animation: move-opposite 3s infinite;
+}
+
+@keyframes move-opposite {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 .hero h5 {
   font-family: "Lexend Zetta", sans-serif;
   font-size: 2rem;
+  text-shadow: 1px 1px 1px white;
 }
 
 div.profile-pic {
@@ -213,14 +272,19 @@ main {
   /* flex: 1;
  } */
 
-/* 
-.projects {
+/* Projects */
+div.projects {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 1;
-} */
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+div.project-1 {
+  display: flex;
+  flex-direction: column;
+}
 
 /* .contacts {
   text-align: center;
@@ -248,36 +312,4 @@ main {
   font-weight: 800;
   text-transform: uppercase;
   position: relative;
-}
-
-.surname {
-  animation: move 3s infinite;
-}
-
-@keyframes move {
-  0% {
-    transform: translate(25px);
-  }
-  50% {
-    transform: translate(50px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-
-.name {
-  animation: move-opposite 3s infinite;
-}
-
-@keyframes move-opposite {
-  0% {
-    transform: translate(-10px);
-  }
-  50% {
-    transform: translate(-20px);
-  }
-  100% {
-    transform: translate(0);
-  }
 }

@@ -20,118 +20,190 @@
 
 <body>
   <header>
-        <div class="menu-toggler">
-          <div class="bar start"></div>
-          <div class="bar"></div>
-          <div class="bar end"></div>
-        </div>
-        <nav class="top-nav">
-          <ul class="nav-list">
-            <li>
-              <a href="index.html" class="nav-link">home</a>
-            </li>
-            <li>
-              <a href="#about" class="nav-link">about</a>
-            </li>
-            <li>
-              <a href="#skills" class="nav-link">skills</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="nav-link">projects</a>
-            </li>
-            <li>
-              <a href="#contacts" class="nav-link">contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="hero">
-          <h1>Hanna<br>Truong Thi</h1>
-          <h5>Junior Software Engineer</h4>
-        </div>
+    <div class="menu-toggler">
+      <div class="bar start"></div>
+      <div class="bar"></div>
+      <div class="bar end"></div>
+    </div>
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-link">home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">about</a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-link">skills</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="nav-link">projects</a>
+        </li>
+        <li>
+          <a href="#contacts" class="nav-link">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="name">Hanna</h1>
+      <h1 class="surname">Truong Thi</h1>
+      <h5>Junior Software Engineer</h4>
+    </div>
   </header>
-
-
+  <div class="hero-background">
+  </div>
+ 
   <!-- <main> -->
-    <section class="about">
-      <div class="container about">
-        <h2>a b o u t</h2>
-        <div class="profile-pic">
-          <img id="profile-pic" src="images/profile-pic-small.jpg" alt="profile-pic">
-        </div>
-        <div class="about-text">
-          <p> Hi, my name Hanna.<br>I am a junior software engineer, former entrepreneur, a third-culture gal, and a skincare enthusiast.</p>
-          <p>My tech journey started in 2019 when after completing a couple of online courses, I realised that joining the 'secret cool club' of developers might be more achievable than I thought. </p>
-          <p>With this in mind, I decided to enroll to Software Engineering Immersive full-stack development programme at General Assembly, where my journey has truly began. Despite it being the most intense three months of my life, it was the best educational experience to date. Being surrounded by like-minded people, learning heeps, I got to immerse myself in the community both online and offline. </p>
-          <p>I am very excited to be utilising my knowledge and skills for developing technologies that we use every day and I am looking forward to starting the next chapter as a full-stack developer.</p>
-        </div>
+  <section class="about">
+    <div class="container about">
+      <h2>a b o u t</h2>
+      <div class="profile-pic">
+        <img id="profile-pic" src="images/profile-pic-small.jpg" alt="profile-pic">
       </div>
-    </section>
+      <div class="about-text">
+        <p> Hi, my name Hanna.<br>I am a junior software engineer, former entrepreneur, a third-culture gal, and a
+          skincare enthusiast.</p>
+        <p>My tech journey started in 2019 when after completing a couple of online courses, I realised that joining the
+          'secret cool club' of developers might be more achievable than I thought. </p>
+        <p>With this in mind, I decided to enroll to Software Engineering Immersive full-stack development programme at
+          General Assembly, where my journey has truly began. Despite it being the most intense three months of my life,
+          it was the best educational experience to date. Being surrounded by like-minded people, learning heeps, I got
+          to immerse myself in the community both online and offline. </p>
+        <p>I am very excited to be utilising my knowledge and skills for developing technologies that we use every day
+          and I am looking forward to starting the next chapter as a full-stack developer.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="skills">
-      <div class="container">
-        <div id="skills">
-          <h2>s k i l l s</h2>
-          <div class="icons">
-            <i class="devicon-chrome-plain"></i>
-            <i class="devicon-facebook-plain"></i>
-            <i class="devicon-firefox-plain"></i>
-            <i class="devicon-git-plain"></i>
-            <i class="devicon-github-plain"></i>
-            <i class="devicon-google-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-moodle-plain"></i>
-            <i class="devicon-safari-plain"></i>
-            <i class="devicon-slack-plain"></i>
-            <i class="devicon-twitter-plain"></i>
-            <i class="devicon-trello-plain"></i>
+  <section class="skills">
+    <div class="container skills">
+      <h2>s k i l l s</h2>
+      <div class="icons">
+        <i class="devicon-chrome-plain"></i>
+        <i class="devicon-facebook-plain"></i>
+        <i class="devicon-firefox-plain"></i>
+        <i class="devicon-git-plain"></i>
+        <i class="devicon-github-plain"></i>
+        <i class="devicon-google-plain"></i>
+        <i class="devicon-html5-plain"></i>
+        <i class="devicon-javascript-plain"></i>
+        <i class="devicon-moodle-plain"></i>
+        <i class="devicon-safari-plain"></i>
+        <i class="devicon-slack-plain"></i>
+        <i class="devicon-twitter-plain"></i>
+        <i class="devicon-trello-plain"></i>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <h2>p r o j e c t s</h2>
+      <div class="projects">
+        <div class="project-1 tile is-ancestor">
+          <h3><a class="modal-button" data-target="modal-bis">Project 1: MacMan</a></h3>
+          <div class="tile is-parent is-vertical is-6">
+            <article class="tile is-child">
+              <figure class="image is-4by3">
+                <img class="project-image" src="images/welcome-page.png" alt="MacMan">
+              </figure>
+            </article>
+          </div>   
+        </div>
+          <div class="modal" id="project-1">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">MacMan</p>
+                <button class="delete close" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <!-- Content ... -->
+              </section>
+            </div>
+          </div>
+        
+        <div class="project-2">
+          <h3><a class="modal-button" data-target="modal-bis">Project 2</a></h3>
+
+          <div class="modal" id="project-2">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">DevTru</p>
+                <button class="delete close" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <!-- Content ... -->
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="project-3">
+          <h3><a class="modal-button" data-target="modal-bis">Project 3</a></h3>
+
+          <div class="modal" id="project-3">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">NutriFix</p>
+                <button class="delete close" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <!-- Content ... -->
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="project-4">
+          <h3><a class="modal-button" data-target="modal-bis">Project 4</a></h3>
+
+          <div class="modal" id="project-4">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">HelloCode</p>
+                <button class="delete close" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <!-- Content ... -->
+              </section>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="projects">
-      <div class="container">
-        <div id="portfolio">
-          <h2>p r o j e c t s</h2>
-          <div class="projects">
-            <h3><a href="#">Project 1</a></h3>
-            <h3><a href="#">Project 2</a></h3>
-            <h3><a href="#">Project 3</a></h3>
-          </div>
-        </div>
+  <section class="contacts">
+    <div class="container">
+      <div id="contacts">
+        <h2>c o n t a c t m e</h2>
+        <nav>
+          <a href="https://hvan307.github.io/"><i class="devicon-github-plain"></i></a>
+          <a href="https://www.linkedin.com/in/hannatruongthi/"><i class="fa fa-linkedin-square"
+              style="font-size:24px"></i></a>
+        </nav>
       </div>
+    </div>
+  </section>
+  <h1 class="title">
+    <section class="name">
+      <span>H</span>
+      <span>A</span>
+      <span>N</span>
+      <span>N</span>
+      <span>A</span>
     </section>
-
-    <section class="contacts">
-      <div class="container">
-        <div id="contacts">
-          <h2>c o n t a c t m e</h2>
-          <nav>
-            <a href="https://hvan307.github.io/"><i class="devicon-github-plain"></i></a>
-            <a href="https://www.linkedin.com/in/hannatruongthi/"><i class="fa fa-linkedin-square"
-                style="font-size:24px"></i></a>
-          </nav>
-        </div>
-      </div>
+    <section class="surname">
+      <span>T</span>
+      <span>R</span>
+      <span>U</span>
+      <span>O</span>
+      <span>N</span>
+      <span>G</span>
     </section>
-    <h1 class="title">
-      <section class="name">
-        <span>H</span>
-        <span>A</span>
-        <span>N</span>
-        <span>N</span>
-        <span>A</span>
-      </section>
-      <section class="surname">
-        <span>T</span>
-        <span>R</span>
-        <span>U</span>
-        <span>O</span>
-        <span>N</span>
-        <span>G</span>
-      </section>
-    </h1>
+  </h1>
   <!-- </main> -->
 </body>
 
