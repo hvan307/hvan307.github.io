@@ -1,20 +1,58 @@
+/* Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+html {
+  font-family: "Lexend Zetta", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  font-family: "Lexend Zetta", sans-serif;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2:hover,
+h2:focus {
+  background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+}
+
+h3 {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 1rem;
+} 
+
+p {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 1rem;
+}
+
+/* Header */
+.header {
   height: 100vh;
   width: 100%;
 }
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-/* NAVBAR */
 
 /* Navbar menu */
 .top-nav {
@@ -22,6 +60,7 @@ body, html {
   width: 100%;
   position: fixed;
   top: -100vh; 
+  z-index: 50;
   background: linear-gradient(to top,  #8686df, #d7d7fa);
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
@@ -43,6 +82,7 @@ body, html {
   color: white;
   padding: 1rem;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
@@ -86,52 +126,128 @@ body, html {
   transform: rotate(45deg) translateX(0.8rem);
 }
 
-.bar.one {
+.bar.start {
   transform-origin: right;
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57); 
 }
 
-.open .bar.one {
+.open .bar.start {
   transform: rotate(-45deg) translateX(-.65rem) translateY(2rem);
-  align-self: flex-end;
 }
 
-/* .open .bar.three {
-  transform: rotate(-45deg) translateX(-0.8rem);
-} */
-
-.bar.four {
+.bar.end {
   align-self: flex-end;
   transform-origin: left;
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57); 
 }
 
-.open .bar.four {
+.open .bar.end {
   transform: rotate(-45deg) translateX(.85rem);
-  align-self: flex-end;
 }
 
+/* Hero */
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 10rem;
+  font-weight: bold;
+  background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  user-select: none;
+}
+
+.hero h5 {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 2rem;
+}
+
+div.profile-pic {
+  height: 150px;
+  width: 150px;
+}
+
+#profile-pic {
+  border-radius: 100px;
+}
+
+
+/* 
+main {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+
+.container.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1; 
+  width: 50%;
+  top: 100px;
+}
+
+
+/* .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1;
+ } */
+
+/* 
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+} */
+
+/* .contacts {
+  text-align: center;
+} */
+/* 
+
+
+
+
+/* @media only screen and (min-width: 600px) {
+  .menu {
+    display: block;
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+  }
+  div {
+    cursor: url(images/kissclipart-selection-and-cursors-icon-cursor-icon-89ded83465d60f8c.png),auto;
+  }
+ }  */
+ /* Navbar brand */
 .title {
   font-family: 'Codystar', cursive;
   font-weight: 800;
   text-transform: uppercase;
   position: relative;
-}
-
-main {
-  background-color: black;
-  /* adjust the height once new content is added  */
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-h2 {
-  font-family: 'Codystar', cursive;
-  color: white;
-  font-weight: 800;
-  text-align: center;
 }
 
 .surname {
@@ -163,61 +279,5 @@ h2 {
   }
   100% {
     transform: translate(0);
-  }
-}
-
-p {
-  font-family: "Lexend Zetta", sans-serif;
-  font-size: 12px;
-}
-
-#about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-
-#skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
-.projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 1;
-}
-
-#contacts {
-  text-align: center;
-}
-
-h3 {
-  font-family: "Lexend Zetta", sans-serif;
-  font-size: 12px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-@media only screen and (min-width: 600px) {
-  .menu {
-    display: block;
-    text-align: center;
-  }
-  .title {
-    text-align: center;
-  }
-  div {
-    cursor: url(images/kissclipart-selection-and-cursors-icon-cursor-icon-89ded83465d60f8c.png),auto;
   }
 }
