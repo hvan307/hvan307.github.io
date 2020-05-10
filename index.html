@@ -53,25 +53,47 @@
   <div class="hero-background">
   </div>
  
-  <!-- <main> -->
+  <main>
   <section class="about">
     <div class="container about">
-      <h2>a b o u t</h2>
-      <div class="profile-pic">
-        <img id="profile-pic" src="images/profile-pic-small.jpg" alt="profile-pic">
-      </div>
+      <h2>a b o u t m e</h2>
+      <div class="about-content">
       <div class="about-text">
-        <p> Hi, my name Hanna.<br>I am a junior software engineer, former entrepreneur, a third-culture gal, and a
-          skincare enthusiast.</p>
-        <p>My tech journey started in 2019 when after completing a couple of online courses, I realised that joining the
-          'secret cool club' of developers might be more achievable than I thought. </p>
-        <p>With this in mind, I decided to enroll to Software Engineering Immersive full-stack development programme at
-          General Assembly, where my journey has truly began. Despite it being the most intense three months of my life,
-          it was the best educational experience to date. Being surrounded by like-minded people, learning heeps, I got
-          to immerse myself in the community both online and offline. </p>
-        <p>I am very excited to be utilising my knowledge and skills for developing technologies that we use every day
-          and I am looking forward to starting the next chapter as a full-stack developer.</p>
+        <p> Hi, my name is Hanna.<br>I am a junior software engineer, former entrepreneur, skincare and bullet journaling enthusiast. </p>
+          <p>To find out more about me, <a class="modal-button" id="more-about-me">click here</a></p>
       </div>
+      <figure class="profile-pic">
+        <img id="profile-pic" src="images/profile-pic-small.jpg" alt="profile-pic">
+      </figure>
+    </div>
+
+      <div class="modal about">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <h2>Mini Bio</h2>
+          <p>My tech journey started in 2019 when after completing a couple of online courses, I realised that joining the
+            'secret cool club' of developers might be more achievable than I thought. </p>
+          <p>With this in mind, I decided to enroll to Software Engineering Immersive full-stack development programme at
+            General Assembly, where my journey has truly began. Despite it being the most intense three months of my life,
+            it was the best educational experience to date. Being surrounded by like-minded people, learning heeps, I got
+            to immerse myself in the community both online and offline. </p>
+          <p>I am very excited to be utilising my knowledge and skills for developing technologies that we use every day
+            and I am looking forward to starting the next chapter as a full-stack developer.</p> 
+            <h2>Personal Info</h2> 
+            <p>I speak Polish, Vietnamese, English. I can also understand French and Spanish food menus, because you know, you have to be prepared for everything. 😉</p> 
+          <h2>Other hobbies:</h2>
+              <p>Jigsaw Puzzles</p> 
+              <p>Bullet Journaling</p> 
+              <p>Travelling</p> 
+              <p>Skincare</p>  
+              <p>Asian Cuisine</p>   
+          <h2>Favourite podcasts:</h2> 
+              <p><a href="https://syntax.fm/">Syntax.fm</a></p>
+              <p><a href="https://www.wired.co.uk/podcasts">Wired UK</a></p>
+          </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+   
     </div>
   </section>
 
@@ -115,7 +137,7 @@
             <div class="modal-card">
               <header class="modal-card-head">
                 <p class="modal-card-title">MacMan</p>
-                <button class="delete close" aria-label="close"></button>
+                <button class="modal-close" aria-label="close"></button>
               </header>
               <section class="modal-card-body">
                 <!-- Content ... -->
@@ -131,7 +153,7 @@
             <div class="modal-card">
               <header class="modal-card-head">
                 <p class="modal-card-title">DevTru</p>
-                <button class="delete close" aria-label="close"></button>
+                <button class="modal-close" aria-label="close"></button>
               </header>
               <section class="modal-card-body">
                 <!-- Content ... -->
@@ -147,7 +169,7 @@
             <div class="modal-card">
               <header class="modal-card-head">
                 <p class="modal-card-title">NutriFix</p>
-                <button class="delete close" aria-label="close"></button>
+                <button class="modal-close" aria-label="close"></button>
               </header>
               <section class="modal-card-body">
                 <!-- Content ... -->
@@ -163,7 +185,7 @@
             <div class="modal-card">
               <header class="modal-card-head">
                 <p class="modal-card-title">HelloCode</p>
-                <button class="delete close" aria-label="close"></button>
+                <button class="modal-close" aria-label="close"></button>
               </header>
               <section class="modal-card-body">
                 <!-- Content ... -->
@@ -204,7 +226,7 @@
       <span>G</span>
     </section>
   </h1>
-  <!-- </main> -->
+  </main>
 </body>
 
 </html>

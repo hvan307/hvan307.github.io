@@ -3,7 +3,7 @@ function main() {
   const topNav = document.querySelector('.top-nav')
   const modalButton = document.querySelector('.modal-button')
   const modal = document.querySelector('.modal')
-  const closeButton = document.querySelector('.close')
+  const closeButton = document.querySelector('.modal-close')
 
   menuToggler.addEventListener('click', () => {
     menuToggler.classList.toggle('open')
