@@ -1,6 +1,7 @@
 function main() {
   const menuToggler = document.querySelector('.menu-toggler')
   const topNav = document.querySelector('.top-nav')
+  const navLink = document.querySelector('.nav-link')
   const modalButton = document.querySelector('.modal-button')
   const modal = document.querySelector('.modal')
   const closeButton = document.querySelector('.modal-close')
@@ -8,6 +9,11 @@ function main() {
   menuToggler.addEventListener('click', () => {
     menuToggler.classList.toggle('open')
     topNav.classList.toggle('open')
+  })
+
+  navLink.addEventListener('click', () => {
+    menuToggler.classList.toggle('open')
+    // topNav.classList.toggle('open')
   })
 
   modalButton.addEventListener('click', () => {

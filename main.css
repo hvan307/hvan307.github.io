@@ -12,7 +12,8 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center fixed;
+  background: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")
+    no-repeat center fixed;
   background-size: cover;
 }
 
@@ -29,12 +30,12 @@ a {
 
 h2 {
   font-family: "Lexend Zetta", sans-serif;
-  color: #8686df;
+  color: #c44ce2;
   font-weight: 800;
   text-align: center;
   font-size: 2rem;
   text-shadow: 1px 1px 1px #d7d7fa;
-  
+  padding: 1rem;
 }
 
 h3 {
@@ -47,22 +48,27 @@ h3 {
 
 h3:hover,
 h3:focus {
-  background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
+  background: linear-gradient(to top, rgb(121, 0, 219), rgb(255, 134, 215));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: .3rem;
+  padding: 0.3rem;
+}
+
+p {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 1rem;
+}
+
+section {
+  margin: 2rem;
+  padding: 2rem;
 }
 
 .modal {
   text-align: center;
   padding: 2rem;
   margin: 1rem;
-}
-
-p {
-  font-family: "Lexend Zetta", sans-serif;
-  font-size: 1rem;
 }
 
 figure {
@@ -73,6 +79,19 @@ figure {
 img {
   border-radius: 10px;
   border: 5px solid rgba(255, 255, 255, 0.411);
+}
+
+i {
+  color: white;
+  font-size: 4rem;
+}
+
+i:hover,
+i:focus {
+  background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Header */
@@ -86,12 +105,12 @@ img {
   height: 100vh;
   width: 100%;
   position: fixed;
-  top: -100vh; 
+  top: -100vh;
   z-index: 50;
-  background: linear-gradient(to top,  #8686df, #d7d7fa);
+  background: linear-gradient(to top, #8686df, #d7d7fa);
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
-  transition: all 650ms cubic-bezier(1,0,0,1);
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
 .nav-list {
@@ -155,21 +174,21 @@ img {
 
 .bar.start {
   transform-origin: right;
-  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57); 
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
 .open .bar.start {
-  transform: rotate(-45deg) translateX(-.65rem) translateY(2rem);
+  transform: rotate(-45deg) translateX(-0.65rem) translateY(2rem);
 }
 
 .bar.end {
   align-self: flex-end;
   transform-origin: left;
-  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57); 
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
 .open .bar.end {
-  transform: rotate(-45deg) translateX(.85rem);
+  transform: rotate(-45deg) translateX(0.85rem);
 }
 
 /* Hero */
@@ -187,7 +206,7 @@ img {
   font-family: "Permanent Marker", cursive;
   font-size: 10rem;
   font-weight: bold;
-  background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
+  background: linear-gradient(to top, rgb(141, 2, 233), rgb(255, 134, 215));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -200,15 +219,15 @@ h1.surname {
 }
 
 @keyframes move {
-    0% {
-      transform: translate(0);
-    }
-    50% {
-      transform: translate(20px);
-    }
-    100% {
-      transform: translate(0);
-    }
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(20px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 h1.name {
@@ -253,12 +272,14 @@ figure.profile-pic {
 
 .about-text {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.699);
+  background: linear-gradient(to top, #8686df, #d7d7fa);
   text-align: center;
   align-self: center;
   font-weight: bold;
   border-radius: 10px;
   color: black;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .modal.about {
@@ -266,7 +287,9 @@ figure.profile-pic {
 }
 
 a#more-about-me:hover,
-a#more-about-me:focus {
+a#more-about-me:focus,
+a.podcast:hover,
+a.podcast:focus {
   background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
   background-clip: text;
   -webkit-background-clip: text;
@@ -282,16 +305,18 @@ main {
   flex-direction: column;
 } */
 
-
-
-
-/* .skills {
+/* Skills */
+.container.skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* flex: 1;
- } */
+  flex-wrap: wrap;
+  width: 55%;
+  background: linear-gradient(to bottom, #8888e9, #c5c5f8);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem auto;
+}
 
 /* Projects */
 div.projects {
@@ -307,13 +332,10 @@ div.project-1 {
   flex-direction: column;
 }
 
-/* .contacts {
-  text-align: center;
-} */
-/* 
-
-
-
+.container.contacts {
+  display: flex;
+  justify-content: center;
+}
 
 /* @media only screen and (min-width: 600px) {
   .menu {
@@ -327,9 +349,9 @@ div.project-1 {
     cursor: url(images/kissclipart-selection-and-cursors-icon-cursor-icon-89ded83465d60f8c.png),auto;
   }
  }  */
- /* Navbar brand */
+/* Navbar brand */
 .title {
-  font-family: 'Codystar', cursive;
+  font-family: "Codystar", cursive;
   font-weight: 800;
   text-transform: uppercase;
   position: relative;
