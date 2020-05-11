@@ -20,7 +20,7 @@ body {
 section {
   margin: 2rem;
   padding: 2rem;
-  width: 90%;
+  width: 100%;
 }
 
 .hero-background {
@@ -354,6 +354,12 @@ small {
 
 @media screen and (max-width: 600px) {
   /* Global */
+  section {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 10px;
+  }
+
   h2 {
     font-size: 1rem;
   }
@@ -388,6 +394,11 @@ small {
     -webkit-text-fill-color: transparent;
   }
 
+  .has-background-gradient {
+    padding: 10px;
+    text-align: center;
+  }
+
   /* Header */
   /* Navbar menu */
   .nav-list {
@@ -417,7 +428,7 @@ small {
 
   /* Hero */
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .hero h5 {
@@ -425,12 +436,8 @@ small {
   }
 
   /* About Me */
-  section.about {
-    width: 80%;
-  }
-
   .container.about {
-    width: 100%;
+    width: 80%;
   }
 
   .about-content {
@@ -443,12 +450,32 @@ small {
     margin: 1rem auto;
   }
 
-  /* Skills */
   .container.skills {
     width: 90%;
   }
 
-  /* Project */
+  /* Projects */
+  .container.projects,
+  article.tile {
+    width: 100%;
+  }
 
+  div.projects,
+  div.project {
+    padding: 10px;
+  }
 
+  p.title {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  p.subtitle {
+    font-size: 10px;
+  }
+
+  /* Contacts */
+  #github-contact {
+    font-size: 4rem;
+  }
 }
