@@ -46,14 +46,14 @@ h3 {
   font-size: 1rem;
 }
 
-h3:hover,
+/* h3:hover,
 h3:focus {
   background: linear-gradient(to top, rgb(121, 0, 219), rgb(255, 134, 215));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0.3rem;
-}
+} */
 
 p {
   font-family: "Lexend Zetta", sans-serif;
