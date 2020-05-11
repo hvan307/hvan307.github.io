@@ -15,129 +15,350 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="main.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="app.js"></script>
 </head>
 
 <body>
   <header>
-    <div class="navbar-menu">
-      <div class="navbar-start">
-        <div class="navbar-brand">
-          <h1 class="title">
-            <section class="name">
-              <span>H</span>
-              <span>A</span>
-              <span>N</span>
-              <span>N</span>
-              <span>A</span>
-            </section>
-            <section className="surname">
-              <span>T</span>
-              <span>R</span>
-              <span>U</span>
-              <span>O</span>
-              <span>N</span>
-              <span>G</span>
-            </section>
-          </h1>
-        </div>
-      </div>
-      <div class="navbar-end">
-        <div class="menu-toggler">
-          <div class="bar start"></div>
-          <div class="bar"></div>
-          <div class="bar end"></div>
-        </div>
-        <nav class="top-nav">
-          <ul class="nav-list">
-            <li>
-              <a href="index.html" class="nav-link">home</a>
-            </li>
-            <li>
-              <a href="#about" class="nav-link">about</a>
-            </li>
-            <li>
-              <a href="#skills" class="nav-link">skills</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="nav-link">projects</a>
-            </li>
-            <li>
-              <a href="#contacts" class="nav-link">contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="hero is-fullheight is-dark">
-          <h1> Hanna Truong Thi </h1>
-          <h5>Junior Software Engineer</h4>
-        </div>
-      </div>
+    <div class="menu-toggler">
+      <div class="bar start"></div>
+      <div class="bar"></div>
+      <div class="bar end"></div>
+    </div>
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-link">home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">about</a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-link">skills</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="nav-link">projects</a>
+        </li>
+        <li>
+          <a href="#contacts" class="nav-link">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="name">Hanna</h1>
+      <h1 class="surname">Truong Thi</h1>
+      <h5>Junior Software Engineer</h4>
     </div>
   </header>
+  <div class="hero-background">
+  </div>
 
   <main>
     <section class="about">
-      <div class="container">
-        <div class="about">
-          <h2>About</h2>
-          <p> Hi, my name Hong Van - which means "pink cloud" in Vietnamese. I'm also Hanna, which sadly doesn't have
-            any
-            hidden meaning. I am a software engineer-to-be, former entrepreneur, a third-culture gal, and a skincare
-            enthusiast.</p>
+      <div class="container about">
+        <h2>a b o u t m e</h2>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-left" data-aos-delay="600">
+            <p> Hi, my name is Hanna.<br>I am a junior software engineer, former entrepreneur, skincare and bullet
+              journaling enthusiast. </p>
+            <p>To find out more about me, <a class="modal-button" id="more-about-me">click here</a></p>
+          </div>
+          <figure class="profile-pic" data-aos="fade-right" data-aos-delay="300">
+            <img id="profile-pic" src="images/profile-pic-small.jpg" alt="profile-pic">
+          </figure>
         </div>
+
+        <div class="modal about">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <h2>Mini Bio</h2>
+            <p>My tech journey started in 2019 when after completing a couple of online courses, I realised that joining
+              the
+              'secret cool club' of developers might be more achievable than I thought. </p>
+            <p>With this in mind, in 2020 I decided to enroll to Software Engineering Immersive full-stack development
+              programme
+              at
+              General Assembly, where my journey has truly began. Despite it being the most intense three months of my
+              life,
+              it was the best educational experience to date. Being surrounded by like-minded people, learning heeps, I
+              got
+              to immerse myself in the community both online and offline. </p>
+            <p>I am very excited to be utilising my knowledge and skills for developing technologies that we use every
+              day
+              and I am looking forward to starting the next chapter as a full-stack developer.</p>
+            <h2>Personal Info</h2>
+            <p>I speak Polish, Vietnamese, English. I can also understand French and Spanish food menus, because you
+              know, you have to be prepared for everything. 😉</p>
+            <h2>Other hobbies:</h2>
+            <p>Jigsaw Puzzles</p>
+            <p>Bullet Journaling</p>
+            <p>Travelling</p>
+            <p>Skincare</p>
+            <p>Asian Cuisine</p>
+            <h2>Favourite podcasts:</h2>
+            <p><a class="podcast" href="https://syntax.fm/">Syntax.fm</a></p>
+            <p><a class="podcast" href="https://www.wired.co.uk/podcasts">Wired UK</a></p>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+
       </div>
     </section>
 
     <section class="skills">
-      <div class="container">
-        <div id="skills">
-          <h2>Skills</h2>
-          <div class="icons">
-            <i class="devicon-chrome-plain"></i>
-            <i class="devicon-facebook-plain"></i>
-            <i class="devicon-firefox-plain"></i>
-            <i class="devicon-git-plain"></i>
-            <i class="devicon-github-plain"></i>
-            <i class="devicon-google-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-moodle-plain"></i>
-            <i class="devicon-safari-plain"></i>
-            <i class="devicon-slack-plain"></i>
-            <i class="devicon-twitter-plain"></i>
-            <i class="devicon-trello-plain"></i>
-          </div>
+      <h2>s k i l l s</h2>
+      <div class="container skills" data-aos="fade-right" data-aos-delay="600">
+        <div class="icons">
+          <i class="devicon-apple-original"></i>
+          <i class="devicon-babel-plain"></i>
+          <i class="devicon-bootstrap-plain-wordmark"></i>
+          <i class="devicon-chrome-plain"></i>
+          <i class="devicon-css3-plain-wordmark"></i>
+          <i class="devicon-devicon-plain-wordmark"></i>
+          <i class="devicon-django-plain"></i>
+          <i class="devicon-express-original"></i>
+          <i class="devicon-facebook-plain"></i>
+          <i class="devicon-firefox-plain"></i>
+          <i class="devicon-git-plain"></i>
+          <i class="devicon-github-plain-wordmark"></i>
+          <i class="devicon-google-plain"></i>
+          <i class="devicon-heroku-plain-wordmark"></i>
+          <i class="devicon-html5-plain-wordmark"></i>
+          <i class="devicon-javascript-plain"></i>
+          <i class="devicon-jquery-plain-wordmark"></i>
+          <i class="devicon-mocha-plain"></i>
+          <i class="devicon-mongodb-plain-wordmark"></i>
+          <i class="devicon-nodejs-plain"></i>
+          <i class="devicon-postgresql-plain-wordmark"></i>
+          <i class="devicon-python-plain-wordmark"></i>
+          <i class="devicon-react-original-wordmark"></i>
+          <i class="devicon-moodle-plain"></i>
+          <i class="devicon-sass-original"></i>
+          <i class="devicon-slack-plain"></i>
+          <i class="devicon-twitter-plain"></i>
+          <i class="devicon-trello-plain-wordmark"></i>
+          <i class="devicon-visualstudio-plain"></i>
+          <i class="devicon-webpack-plain-wordmark"></i>
         </div>
       </div>
     </section>
 
     <section class="projects">
-      <div class="container">
-        <div id="portfolio">
-          <h2>Projects</h2>
-          <div class="projects">
-            <h3><a href="#">Project 1</a></h3>
-            <h3><a href="#">Project 2</a></h3>
-            <h3><a href="#">Project 3</a></h3>
+      <div class="container projects">
+        <h2>p r o j e c t s</h2>
+        <!-- Project 1 -->
+        <div class="project">
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+              <div class="tile">
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child" data-aos="flip-right">
+                    <p class="title has-text-white">Summary</p>
+                    <p class="subtitle">Mac Man is based on the 80s' classic arcade game. It was my first solo project
+                      at GA. The objective was to create a grid-based game to be rendered in a browser using Vanilla JS,
+                      HTML, and CSS. The project was to be completed in a week and gave me an opportunity to practice
+                      and apply knowledge gained thus far by interacting with DOM objects.</p>
+                    <div class="project-links">
+                      <h3><a href="hvan307.github.io/MacMan">Launch Project</a></h3>
+                      <a href="github.com/hvan307/MacMan"><i class="devicon-github-plain"></i></a>
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child">
+                    <p class="title project has-text-white">Project 1</p>
+                    <figure class="image">
+                      <img src="images/MacMan-logo.png" alt="MacMan-logo">
+                    </figure>
+                    <figure class="image is-5by3">
+                      <img src="images/MacMan-welcome.png" alt="MacMan">
+                    </figure>
+                    <figure class="image is-5by3">
+                      <img src="images/MacMan-game.png" alt="MacMan-game">
+                    </figure>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-parent" data-aos="flip-left">
+              <article class="tile is-child">
+                <div class="content">
+                  <p class="title has-text-white">More details</p>
+                  <p class="subtitle"> Given a selection of games to recreate, I opted for Pac-Man with a personalised
+                    cartoon-like food theme where a player is collecting burgers and fries, while being chased by four
+                    different weight scales. In terms of 'ghost logic', I opted for randomised movements, and to make it
+                    more stimulating for the player, I increased the pace at which each scale was moving. </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project">
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+              <div class="tile">
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child">
+                    <p class="title project has-text-white">Project 2</p>
+                    <p class="title project-name">DevTru</p>
+                    <div class="content" data-aos="flip-right">
+                    <p class="title has-text-white">Summary</p>
+                    <p class="subtitle">This was a 48h hackathon-style project using React.js. </p>
+                    <div class="project-links">
+                      <h3><a href="hvan307.github.io/DevTru">Launch Project</a></h3>
+                      <a href="github.com/hvan307/DevTru"><i class="devicon-github-plain"></i></a>
+                      <p class="title has-text-white">More details</p>
+                      <p class="subtitle">Our API of choice was the Deezer public API that allows you to get information
+                        on various artists, songs and albums in the music industry. A bonus feature we included was a
+                        song's sample preview, as well as designing a navbar search bar that allows you to do combined
+                        searches, e.g. an artist’s name and song’s name to search for a song covered by a specific
+                        artist. </p>
+                    </div>
+                    <figure class="image is-16by9">
+                      <img src="images/DevTru-desktop.png" alt="DevTru-desktop">
+                    </figure>
+                  </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <figure class="image is-3by4">
+                  <img src="images/devtru-mobile.png" alt="DevTru-mobile">
+                </figure>
+                <figure class="image is-5by3">
+                  <img src="images/topcharts.png" alt="top-charts">
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project">
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+              <div class="tile">
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child">
+                    <p class="title project has-text-white">Project 3</p>
+                    <figure class="image">
+                      <img src="images/NutriFix-logo.png" alt="Nutrifix-logo">
+                    </figure>
+                  </article>
+                  <article class="tile is-child" data-aos="flip-right">
+                    <p class="title has-text-white">Summary</p>
+                    <p class="subtitle">This was a week long group project that utilised Express and MongoDB for
+                      developing the backend, and React.js and Bulma for building the frontend for our app. </p>
+                    <div class="project-links">
+                      <h3><a href="nutrifix.herokuapp.com">Launch Project</a></h3>
+                      <a href="github.com/hvan307/NutriFix"><i class="devicon-github-plain"></i></a>
+                      <p class="title has-text-white">More details</p>
+                      <p class="subtitle">The app features healthy recipes that the users can browse and sort with as many filters as they want (e.g. gluten-free, quick and easy, vegan). Other user privileges include adding your own recipe to the database, searching for ingredients that return information on its macronutrients, as well as a customisable shopping list.</p>
+                    </div>
+                    <figure class="image is-5by3">
+                      <img src="images/all-recipes.png" alt="NutriFix-recipes">
+                    </figure>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-parent" data-aos="fade-left" data-delay="600">
+              <article class="tile is-child">
+                <div class="content">
+                  <figure class="image">
+                    <img src="images/nutrifix-mobile.png" alt="NutriFix-mobile">
+                  </figure>
+                  <figure class="image">
+                    <img src="images/NutriFix-welcome.png" alt="NutriFix-desktop">
+                  </figure>
+                  <figure class="image">
+                    <img src="images/single-recipe.png" alt="NutriFix-single-recipe">
+                  </figure>
+                  <figure class="image">
+                    <img src="images/searchbar.png" alt="NutriFix-searchbar">
+                  </figure>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project">
+          <div class="tile is-ancestor" data-aos="fade-up" data-aos-delay="600">
+            <div class="tile is-vertical is-8">
+              <div class="tile">
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child">
+                    <p class="title project has-text-white">Project 4</p>
+                    <figure class="image">
+                      <img src="images/HelloCode-logo.png" alt="HelloCode-logo">
+                    </figure>
+                    <p class="title has-text-white">Summary</p>
+                    <p class="subtitle">HelloCode is a mobile-friendly chat application that connects users who want to
+                      exchange programming knowledge with each other. It is a full-stack application using Python Django and React.js.
+                    </p>
+                    <div class="project-links">
+                      <h3><a href="http://hellocodeapp.herokuapp.com/">Launch Project</a></h3>
+                      <a href="https://github.com/hvan307/HelloCode"><i class="devicon-github-plain"></i></a>
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child">
+                    <figure class="image">
+                      <img src="images/hellocode-mobile.png" alt="HelloCode-mobile">
+                    </figure>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-parent" data-aos="fade-up" data-aos-delay="600">
+                <article class="tile is-child">
+                  <p class="title has-text-white">More details</p>
+                  <p class="subtitle">
+                     This was a four-member collaboration. We used Django REST Framework and Channels, as well as React.js with Material-UI framework to complete this project over a week.
+                      We wanted to create a chat app with a mobile-first design that allows programmers to connect with each other based on a language, or a framework they're interested to explore and exchange information on. </p>
+                  <figure class="image">
+                    <img src="images/home-desktop.png" alt="HelloCode-desktop">
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <figure class="image">
+                  <img src="images/Ramona-profile.png" alt="user-profile">
+                </figure>
+                <figure class="image">
+                  <img src="images/new-chat.png" alt="new-chat">
+                </figure>
+                <figure class="image">
+                  <img src="images/chat2.png" alt="chat">
+                </figure>
+              </article>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
+    <!-- Contacts -->
     <section class="contacts">
-      <div class="container">
-        <div id="contacts">
-          <h2>Contact Me</h2>
-          <nav>
-            <a href="https://hvan307.github.io/"><i class="devicon-github-plain"></i></a>
-            <a href="https://www.linkedin.com/in/hannatruongthi/"><i class="fa fa-linkedin-square"
-                style="font-size:24px"></i></a>
-          </nav>
-        </div>
+      <div class="container contacts">
+        <h2>c o n t a c t m e</h2>
+        <nav class="contacts">
+          <a href="https://github.com/hvan307/"><i class="devicon-github-plain"></i></a>
+          <a href="https://www.linkedin.com/in/hannatruongthi/"><i class="fa  fa-linkedin-square fa-4x"></i></a></i>
+        </nav>
       </div>
     </section>
-
   </main>
+  <!-- Footer -->
+  <footer>
+    <div></div>
+    <small>&#169 by Hanna Truong Thi</small>
+  </footer>
 </body>
 
 </html>
