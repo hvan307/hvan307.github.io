@@ -21,6 +21,7 @@
 
 <body>
   <header>
+    <!-- Home -->
     <div class="menu-toggler">
       <div class="bar start"></div>
       <div class="bar"></div>
@@ -53,7 +54,9 @@
   </header>
   <div class="hero-background">
   </div>
+
   <main>
+    <!-- About -->
     <section class="about" id="about">
       <div class="container about">
         <h2>a b o u t m e</h2>
@@ -67,7 +70,7 @@
             <img id="profile-pic" src="images/profile-pic-small.jpg" alt="profile-pic">
           </figure>
         </div>
-
+        <!-- Modal About Me -->
         <div class="modal about">
           <div class="modal-background"></div>
           <div class="modal-content">
@@ -101,10 +104,9 @@
           </div>
           <button class="modal-close is-large" aria-label="close"></button>
         </div>
-
       </div>
     </section>
-
+    <!-- Skills -->
     <section class="skills" id="skills">
       <h2>s k i l l s</h2>
       <div class="container skills has-background-gradient" data-aos="fade-right" data-aos-delay="600">
@@ -142,7 +144,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Projects -->
     <section class="projects" id="projects">
       <div class="container projects">
         <h2>p r o j e c t s</h2>
@@ -205,7 +207,7 @@
                       <p class="title project-name has-text-black">DevTru</p>
                       <img id="DevTru" src="images/DevTru-logo.png" alt="DevTru-logo" height="200" width="300" !important>
                   </div>
-                    <div class="content" data-aos="flip-right">
+                    <div class="content" data-aos="fade-up" data-aos-delay="600">
                     <p class="title has-text-white">Summary</p>
                     <p class="subtitle has-background-gradient">This was a 48h hackathon-style project that utilises an external API and React.js. </p>
                     <div class="project-links">
@@ -223,7 +225,7 @@
               </div>
             </div>
             <div class="tile is-parent">
-              <article class="tile is-child">
+              <article class="tile is-child" data-aos="flip-left">
                 <figure class="image is-3by4">
                   <img src="images/devtru-mobile.png" alt="DevTru-mobile">
                 </figure>
@@ -249,7 +251,7 @@
                       <img src="images/NutriFix-logo.png" alt="Nutrifix-logo">
                     </figure>
                   </article>
-                  <article class="tile is-child" data-aos="flip-right">
+                  <article class="tile is-child" data-aos="fade-up" data-aos-delay="600">
                     <p class="title has-text-white">Summary</p>
                     <p class="subtitle has-background-gradient">This was a week long group project that utilised Express and MongoDB for
                       developing the backend, and React.js and Bulma for building the frontend for our app. </p>
@@ -266,7 +268,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile is-parent" data-aos="fade-left" data-aos-delay="800">
+            <div class="tile is-parent" data-aos="flip-left">
               <article class="tile is-child">
                 <div class="content">
                   <figure class="image">
@@ -288,11 +290,11 @@
         </div>
         <!-- Project 4 -->
         <div class="project">
-          <div class="tile is-ancestor" data-aos="fade-up" data-aos-delay="300">
+          <div class="tile is-ancestor">
             <div class="tile is-vertical is-8">
               <div class="tile">
                 <div class="tile is-parent is-vertical">
-                  <article class="tile is-child">
+                  <article class="tile is-child" data-aos="fade-up" data-aos-delay="600">
                     <p class="title project has-text-white">Project 4</p>
                     <figure class="image">
                       <img src="images/HelloCode-logo.png" alt="HelloCode-logo">
@@ -328,7 +330,7 @@
               </div>
             </div>
             <div class="tile is-parent">
-              <article class="tile is-child">
+              <article class="tile is-child" data-aos="flip-left">
                 <figure class="image">
                   <img src="images/Ramona-profile.png" alt="user-profile">
                 </figure>
@@ -361,5 +363,4 @@
     <small>2020 &#169 Hanna Truong Thi</small>
   </footer>
 </body>
-
 </html>
