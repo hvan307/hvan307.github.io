@@ -407,6 +407,11 @@ small {
     text-align: center;
   }
 
+  figure.is-mobile-view {
+    width: 100%; 
+    margin: 1rem auto;
+  }
+
   /* Header */
   /* Navbar menu */
   .nav-list {
@@ -503,12 +508,6 @@ small {
 
   .tile.summary-and-links {
     order: 2;
-  }
-
-  /* Project 2 */
-  figure.is-mobile-view {
-    width: 100%; 
-    margin: 1rem auto;
   }
 
   /* Contacts */
