@@ -348,8 +348,14 @@ nav.contacts {
 }
 
 /* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
 small {
   font-size: 1rem;
+  margin: 2rem;
 }
 
 @media screen and (max-width: 500px) {
