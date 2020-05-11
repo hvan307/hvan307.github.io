@@ -59,7 +59,7 @@
       <div class="container about">
         <h2>a b o u t m e</h2>
         <div class="about-content">
-          <div class="about-text" data-aos="fade-left" data-aos-delay="600">
+          <div class="about-text has-background-gradient" data-aos="fade-left" data-aos-delay="600">
             <p> Hi, my name is Hanna.<br>I am a junior software engineer, former entrepreneur, skincare and bullet
               journaling enthusiast. </p>
             <p>To find out more about me, <a class="modal-button" id="more-about-me">click here</a></p>
@@ -97,8 +97,8 @@
             <p>Skincare</p>
             <p>Asian Cuisine</p>
             <h2>Favourite podcasts:</h2>
-            <p><a class="podcast" href="https://syntax.fm/">Syntax.fm</a></p>
-            <p><a class="podcast" href="https://www.wired.co.uk/podcasts">Wired UK</a></p>
+            <p><a class="podcast" href="https://syntax.fm/" target="_blank">Syntax.fm</a></p>
+            <p><a class="podcast" href="https://www.wired.co.uk/podcasts" target="_blank">Wired UK</a></p>
           </div>
           <button class="modal-close is-large" aria-label="close"></button>
         </div>
@@ -108,7 +108,7 @@
 
     <section class="skills">
       <h2>s k i l l s</h2>
-      <div class="container skills" data-aos="fade-right" data-aos-delay="600">
+      <div class="container skills has-background-gradient" data-aos="fade-right" data-aos-delay="600">
         <div class="icons">
           <i class="devicon-apple-original"></i>
           <i class="devicon-babel-plain"></i>
@@ -155,13 +155,13 @@
                 <div class="tile is-parent is-vertical">
                   <article class="tile is-child" data-aos="flip-right">
                     <p class="title has-text-white">Summary</p>
-                    <p class="subtitle">Mac Man is based on the 80s' classic arcade game. It was my first solo project
+                    <p class="subtitle has-background-gradient">Mac Man is based on the 80s' classic arcade game. It was my first solo project
                       at GA. The objective was to create a grid-based game to be rendered in a browser using Vanilla JS,
                       HTML, and CSS. The project was to be completed in a week and gave me an opportunity to practice
                       and apply knowledge gained thus far by interacting with DOM objects.</p>
                     <div class="project-links">
-                      <h3><a href="hvan307.github.io/MacMan">Launch Project</a></h3>
-                      <a href="github.com/hvan307/MacMan"><i class="devicon-github-plain"></i></a>
+                      <h3><a href="https://hvan307.github.io/MacMan" target="_blank">Launch Project</a></h3>
+                      <a href="https://github.com/hvan307/MacMan" target="_blank"><i class="devicon-github-plain"></i></a>
                     </div>
                   </article>
                 </div>
@@ -185,7 +185,7 @@
               <article class="tile is-child">
                 <div class="content">
                   <p class="title has-text-white">More details</p>
-                  <p class="subtitle"> Given a selection of games to recreate, I opted for Pac-Man with a personalised
+                  <p class="subtitle has-background-gradient"> Given a selection of games to recreate, I opted for Pac-Man with a personalised
                     cartoon-like food theme where a player is collecting burgers and fries, while being chased by four
                     different weight scales. In terms of 'ghost logic', I opted for randomised movements, and to make it
                     more stimulating for the player, I increased the pace at which each scale was moving. </p>
@@ -202,20 +202,19 @@
                 <div class="tile is-parent is-vertical">
                   <article class="tile is-child">
                     <p class="title project has-text-white">Project 2</p>
-                    <p class="title project-name">DevTru</p>
+                    <div class="project-name" id="DevTru">
+                      <p class="title project-name has-text-black">DevTru</p>
+                      <img id="DevTru" src="images/DevTru-logo.png" alt="DevTru-logo" height="200" width="300" !important>
+                  </div>
                     <div class="content" data-aos="flip-right">
                     <p class="title has-text-white">Summary</p>
-                    <p class="subtitle">This was a 48h hackathon-style project using React.js. </p>
+                    <p class="subtitle has-background-gradient">This was a 48h hackathon-style project that utilises an external API and React.js. </p>
                     <div class="project-links">
-                      <h3><a href="hvan307.github.io/DevTru">Launch Project</a></h3>
-                      <a href="github.com/hvan307/DevTru"><i class="devicon-github-plain"></i></a>
-                      <p class="title has-text-white">More details</p>
-                      <p class="subtitle">Our API of choice was the Deezer public API that allows you to get information
-                        on various artists, songs and albums in the music industry. A bonus feature we included was a
-                        song's sample preview, as well as designing a navbar search bar that allows you to do combined
-                        searches, e.g. an artist’s name and song’s name to search for a song covered by a specific
-                        artist. </p>
+                      <h3 class="has-text-white"><a href="https://hvan307.github.io/DevTru" target="_blank">Launch Project</a></h3>
+                      <a href="https://github.com/hvan307/DevTru" target="_blank"><i class="devicon-github-plain"></i></a>
                     </div>
+                      <p class="title has-text-white">More details</p>
+                      <p class="subtitle has-background-gradient">My partner and I chose the Deezer public API that allows you to get information on various artists, songs and albums in the music industry. A bonus feature we included was a song's sample preview, as well as designing a navbar search bar that allows you to do combined searches, e.g. an artist’s name and song’s name to search for a song covered by a specific artist. </p>
                     <figure class="image is-16by9">
                       <img src="images/DevTru-desktop.png" alt="DevTru-desktop">
                     </figure>
@@ -231,6 +230,9 @@
                 </figure>
                 <figure class="image is-5by3">
                   <img src="images/topcharts.png" alt="top-charts">
+                </figure>
+                <figure class="image is-5by3">
+                  <img src="images/searchresults.png" alt="DevTru-adele">
                 </figure>
               </article>
             </div>
@@ -250,13 +252,13 @@
                   </article>
                   <article class="tile is-child" data-aos="flip-right">
                     <p class="title has-text-white">Summary</p>
-                    <p class="subtitle">This was a week long group project that utilised Express and MongoDB for
+                    <p class="subtitle has-background-gradient">This was a week long group project that utilised Express and MongoDB for
                       developing the backend, and React.js and Bulma for building the frontend for our app. </p>
                     <div class="project-links">
-                      <h3><a href="nutrifix.herokuapp.com">Launch Project</a></h3>
-                      <a href="github.com/hvan307/NutriFix"><i class="devicon-github-plain"></i></a>
+                      <h3><a href="https://nutrifix.herokuapp.com" target="_blank">Launch Project</a></h3>
+                      <a href="https://github.com/hvan307/NutriFix" target="_blank"><i class="devicon-github-plain"></i></a>
                       <p class="title has-text-white">More details</p>
-                      <p class="subtitle">The app features healthy recipes that the users can browse and sort with as many filters as they want (e.g. gluten-free, quick and easy, vegan). Other user privileges include adding your own recipe to the database, searching for ingredients that return information on its macronutrients, as well as a customisable shopping list.</p>
+                      <p class="subtitle has-background-gradient">The app features healthy recipes that the users can browse and sort with as many filters as they want (e.g. gluten-free, quick and easy, vegan). Other user privileges include adding your own recipe to the database, searching for ingredients that return information on its macronutrients, as well as a customisable shopping list.</p>
                     </div>
                     <figure class="image is-5by3">
                       <img src="images/all-recipes.png" alt="NutriFix-recipes">
@@ -265,7 +267,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile is-parent" data-aos="fade-left" data-delay="600">
+            <div class="tile is-parent" data-aos="fade-left" data-aos-delay="800">
               <article class="tile is-child">
                 <div class="content">
                   <figure class="image">
@@ -287,7 +289,7 @@
         </div>
         <!-- Project 4 -->
         <div class="project">
-          <div class="tile is-ancestor" data-aos="fade-up" data-aos-delay="600">
+          <div class="tile is-ancestor" data-aos="fade-up" data-aos-delay="300">
             <div class="tile is-vertical is-8">
               <div class="tile">
                 <div class="tile is-parent is-vertical">
@@ -297,12 +299,12 @@
                       <img src="images/HelloCode-logo.png" alt="HelloCode-logo">
                     </figure>
                     <p class="title has-text-white">Summary</p>
-                    <p class="subtitle">HelloCode is a mobile-friendly chat application that connects users who want to
+                    <p class="subtitle has-background-gradient">HelloCode is a mobile-friendly chat application that connects users who want to
                       exchange programming knowledge with each other. It is a full-stack application using Python Django and React.js.
                     </p>
                     <div class="project-links">
-                      <h3><a href="http://hellocodeapp.herokuapp.com/">Launch Project</a></h3>
-                      <a href="https://github.com/hvan307/HelloCode"><i class="devicon-github-plain"></i></a>
+                      <h3><a href="http://hellocodeapp.herokuapp.com/" target="_blank">Launch Project</a></h3>
+                      <a href="https://github.com/hvan307/HelloCode" target="_blank"><i class="devicon-github-plain"></i></a>
                     </div>
                   </article>
                 </div>
@@ -317,7 +319,7 @@
               <div class="tile is-parent" data-aos="fade-up" data-aos-delay="600">
                 <article class="tile is-child">
                   <p class="title has-text-white">More details</p>
-                  <p class="subtitle">
+                  <p class="subtitle has-background-gradient">
                      This was a four-member collaboration. We used Django REST Framework and Channels, as well as React.js with Material-UI framework to complete this project over a week.
                       We wanted to create a chat app with a mobile-first design that allows programmers to connect with each other based on a language, or a framework they're interested to explore and exchange information on. </p>
                   <figure class="image">

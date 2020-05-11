@@ -93,6 +93,13 @@ i:focus {
   -webkit-text-fill-color: transparent;
 }
 
+.has-background-gradient {
+  background: linear-gradient(to bottom, #8888e9, #c5c5f8);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem auto;
+}
+
 /* Header */
 .header {
   height: 100vh;
@@ -271,7 +278,7 @@ figure.profile-pic {
 
 .about-text {
   flex: 1;
-  background: linear-gradient(to top, #8686df, #d7d7fa);
+  /* background: linear-gradient(to top, #8686df, #d7d7fa); */
   text-align: center;
   align-self: center;
   font-weight: bold;
@@ -295,15 +302,6 @@ a.podcast:focus {
   -webkit-text-fill-color: transparent;
 }
 
-/* 
-main {
-  background-color: black;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-} */
-
 /* Skills */
 .container.skills {
   display: flex;
@@ -311,10 +309,6 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   width: 55%;
-  background: linear-gradient(to bottom, #8888e9, #c5c5f8);
-  border-radius: 10px;
-  padding: 2rem;
-  margin: 1rem auto;
 }
 
 /* Projects */
@@ -341,6 +335,11 @@ article.tile {
   text-align: center;
 }
 
+div #DevTru {
+  padding: 1rem;
+  background: linear-gradient(rgba(250,0,0,0.5), orange);
+}
+
 /* Contacts */
 nav.contacts {
   display: flex;
@@ -364,5 +363,9 @@ small {
   .hero {
     text-align: center;
     width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
   }
 }
