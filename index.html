@@ -15,6 +15,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="main.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="app.js"></script>
 </head>
 
@@ -58,12 +59,12 @@
       <div class="container about">
         <h2>a b o u t m e</h2>
         <div class="about-content">
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-left" data-aos-delay="600">
             <p> Hi, my name is Hanna.<br>I am a junior software engineer, former entrepreneur, skincare and bullet
               journaling enthusiast. </p>
             <p>To find out more about me, <a class="modal-button" id="more-about-me">click here</a></p>
           </div>
-          <figure class="profile-pic">
+          <figure class="profile-pic" data-aos="fade-right" data-aos-delay="300">
             <img id="profile-pic" src="images/profile-pic-small.jpg" alt="profile-pic">
           </figure>
         </div>
@@ -107,7 +108,7 @@
 
     <section class="skills">
       <h2>s k i l l s</h2>
-      <div class="container skills">
+      <div class="container skills" data-aos="fade-right" data-aos-delay="600">
         <div class="icons">
           <i class="devicon-apple-original"></i>
           <i class="devicon-babel-plain"></i>
@@ -152,26 +153,24 @@
             <div class="tile is-vertical is-8">
               <div class="tile">
                 <div class="tile is-parent is-vertical">
-                  <article class="tile is-child">
-                    <p class="title project has-text-white">Project 1</p>
-                    <figure class="image">
-                      <img src="images/MacMan-logo.png" alt="MacMan-logo">
-                    </figure>
-                  </article>
-                  <article class="tile is-child">
+                  <article class="tile is-child" data-aos="flip-right">
                     <p class="title has-text-white">Summary</p>
                     <p class="subtitle">Mac Man is based on the 80s' classic arcade game. It was my first solo project
                       at GA. The objective was to create a grid-based game to be rendered in a browser using Vanilla JS,
                       HTML, and CSS. The project was to be completed in a week and gave me an opportunity to practice
                       and apply knowledge gained thus far by interacting with DOM objects.</p>
-                      <div class="project-links">
-                        <h3><a href="hvan307.github.io/MacMan">Launch Project</a></h3>
-                        <a href="github.com/hvan307/MacMan"><i class="devicon-github-plain"></i></a>
-                      </div>
+                    <div class="project-links">
+                      <h3><a href="hvan307.github.io/MacMan">Launch Project</a></h3>
+                      <a href="github.com/hvan307/MacMan"><i class="devicon-github-plain"></i></a>
+                    </div>
                   </article>
                 </div>
                 <div class="tile is-parent">
                   <article class="tile is-child">
+                    <p class="title project has-text-white">Project 1</p>
+                    <figure class="image">
+                      <img src="images/MacMan-logo.png" alt="MacMan-logo">
+                    </figure>
                     <figure class="image is-5by3">
                       <img src="images/MacMan-welcome.png" alt="MacMan">
                     </figure>
@@ -182,7 +181,7 @@
                 </div>
               </div>
             </div>
-            <div class="tile is-parent">
+            <div class="tile is-parent" data-aos="flip-left">
               <article class="tile is-child">
                 <div class="content">
                   <p class="title has-text-white">More details</p>
@@ -204,23 +203,25 @@
                   <article class="tile is-child">
                     <p class="title project has-text-white">Project 2</p>
                     <p class="title project-name">DevTru</p>
+                    <div class="content" data-aos="flip-right">
                     <p class="title has-text-white">Summary</p>
                     <p class="subtitle">This was a 48h hackathon-style project using React.js. </p>
                     <div class="project-links">
                       <h3><a href="hvan307.github.io/DevTru">Launch Project</a></h3>
                       <a href="github.com/hvan307/DevTru"><i class="devicon-github-plain"></i></a>
+                      <p class="title has-text-white">More details</p>
+                      <p class="subtitle">Our API of choice was the Deezer public API that allows you to get information
+                        on various artists, songs and albums in the music industry. A bonus feature we included was a
+                        song's sample preview, as well as designing a navbar search bar that allows you to do combined
+                        searches, e.g. an artist’s name and song’s name to search for a song covered by a specific
+                        artist. </p>
                     </div>
                     <figure class="image is-16by9">
-                       <img src="images/DevTru-desktop.png" alt="DevTru-desktop">
+                      <img src="images/DevTru-desktop.png" alt="DevTru-desktop">
                     </figure>
+                  </div>
                   </article>
                 </div>
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child">
-                  <p class="title">More details</p>
-                  <p class="subtitle">Our API of choice was the Deezer public API that allows you to get information on various artists, songs and albums in the music industry. A bonus feature we included was a song's sample preview, as well as designing a navbar search bar that allows you to do combined searches, e.g. an artist’s name and song’s name to search for a song covered by a specific artist. </p>
-                </article>
               </div>
             </div>
             <div class="tile is-parent">
@@ -247,12 +248,15 @@
                       <img src="images/NutriFix-logo.png" alt="Nutrifix-logo">
                     </figure>
                   </article>
-                  <article class="tile is-child">
+                  <article class="tile is-child" data-aos="flip-right">
                     <p class="title has-text-white">Summary</p>
-                    <p class="subtitle">This was a week long group project that utilised Express and MongoDB for developing the backend, and React.js and Bulma for building the frontend for our app. </p>
+                    <p class="subtitle">This was a week long group project that utilised Express and MongoDB for
+                      developing the backend, and React.js and Bulma for building the frontend for our app. </p>
                     <div class="project-links">
                       <h3><a href="nutrifix.herokuapp.com">Launch Project</a></h3>
                       <a href="github.com/hvan307/NutriFix"><i class="devicon-github-plain"></i></a>
+                      <p class="title has-text-white">More details</p>
+                      <p class="subtitle">The app features healthy recipes that the users can browse and sort with as many filters as they want (e.g. gluten-free, quick and easy, vegan). Other user privileges include adding your own recipe to the database, searching for ingredients that return information on its macronutrients, as well as a customisable shopping list.</p>
                     </div>
                     <figure class="image is-5by3">
                       <img src="images/all-recipes.png" alt="NutriFix-recipes">
@@ -260,17 +264,11 @@
                   </article>
                 </div>
               </div>
-              <div class="tile is-parent">
-                <article class="tile is-child">
-                  <p class="title">More details</p>
-                  <p class="subtitle">The app features healthy recipes that the users can browse and sort with as many filters as they want (e.g. gluten-free, quick and easy, vegan). Other user privileges include adding your own recipe to the database, searching for ingredients that return information on its macronutrients, as well as a customisable shopping list.</p>
-                </article>
-              </div>
             </div>
-            <div class="tile is-parent">
+            <div class="tile is-parent" data-aos="fade-left" data-delay="600">
               <article class="tile is-child">
                 <div class="content">
-                  <figure class="image is-3by5">
+                  <figure class="image">
                     <img src="images/nutrifix-mobile.png" alt="NutriFix-mobile">
                   </figure>
                   <figure class="image">
@@ -279,6 +277,9 @@
                   <figure class="image">
                     <img src="images/single-recipe.png" alt="NutriFix-single-recipe">
                   </figure>
+                  <figure class="image">
+                    <img src="images/searchbar.png" alt="NutriFix-searchbar">
+                  </figure>
                 </div>
               </article>
             </div>
@@ -286,40 +287,46 @@
         </div>
         <!-- Project 4 -->
         <div class="project">
-          <div class="tile is-ancestor">
+          <div class="tile is-ancestor" data-aos="fade-up" data-aos-delay="300">
             <div class="tile is-vertical is-8">
               <div class="tile">
                 <div class="tile is-parent is-vertical">
                   <article class="tile is-child">
                     <p class="title project has-text-white">Project 4</p>
                     <figure class="image">
-                        <img src="images/HelloCode-logo.png" alt="HelloCode-logo">
+                      <img src="images/HelloCode-logo.png" alt="HelloCode-logo">
                     </figure>
-                    <p class="title">Summary</p>
-                  <p class="subtitle">HelloCode is a mobile-friendly chat application that connects users who want to exchange programming knowledge with each other. It is a full-stack application using Python Django (Django REST Framework, Channels) and React.js with Material-UI framework developed over a week.</p>
-                  <div class="project-links">
-                  <h3><a href="http://hellocodeapp.herokuapp.com/">Launch Project</a></h3>
-                  <a href="https://github.com/hvan307/HelloCode"><i class="devicon-github-plain"></i></a>
-                </div>
+                    <p class="title has-text-white">Summary</p>
+                    <p class="subtitle">HelloCode is a mobile-friendly chat application that connects users who want to
+                      exchange programming knowledge with each other. It is a full-stack application using Python Django and React.js.
+                    </p>
+                    <div class="project-links">
+                      <h3><a href="http://hellocodeapp.herokuapp.com/">Launch Project</a></h3>
+                      <a href="https://github.com/hvan307/HelloCode"><i class="devicon-github-plain"></i></a>
+                    </div>
                   </article>
                 </div>
                 <div class="tile is-parent">
                   <article class="tile is-child">
                     <figure class="image">
-                   <img src="images/hellocode-mobile.png" alt="HelloCode-mobile">
+                      <img src="images/hellocode-mobile.png" alt="HelloCode-mobile">
                     </figure>
                   </article>
                 </div>
               </div>
-              <div class="tile is-parent">
+              <div class="tile is-parent" data-aos="fade-up" data-aos-delay="600">
                 <article class="tile is-child">
+                  <p class="title has-text-white">More details</p>
+                  <p class="subtitle">
+                     This was a four-member collaboration. We used Django REST Framework and Channels, as well as React.js with Material-UI framework to complete this project over a week.
+                      We wanted to create a chat app with a mobile-first design that allows programmers to connect with each other based on a language, or a framework they're interested to explore and exchange information on. </p>
                   <figure class="image">
                     <img src="images/home-desktop.png" alt="HelloCode-desktop">
                   </figure>
                 </article>
               </div>
             </div>
-            <div class="tile is-parent is-vertical">
+            <div class="tile is-parent">
               <article class="tile is-child">
                 <figure class="image">
                   <img src="images/Ramona-profile.png" alt="user-profile">

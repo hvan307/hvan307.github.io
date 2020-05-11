@@ -12,8 +12,8 @@ function main() {
   })
 
   navLink.addEventListener('click', () => {
-    menuToggler.classList.toggle('open')
-    // topNav.classList.toggle('open')
+    menuToggler.classList.remove('open')
+    topNav.classList.remove('open')
   })
 
   modalButton.addEventListener('click', () => {
@@ -23,6 +23,12 @@ function main() {
   closeButton.addEventListener('click', () => {
     modal.classList.toggle('is-active')
   })
+
+  AOS.init({
+    easing: 'ease',
+    duration: 1800,
+    startEvent: 'DOMContentLoaded'
+  }) 
 }
 
 window.addEventListener('DOMContentLoaded', main)
