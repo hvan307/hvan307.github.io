@@ -479,3 +479,12 @@ small {
     font-size: 4rem;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  /* Header */
+  /* Navbar menu */
+  .nav-list {
+    flex-direction: column;
+    font-size: 2rem;
+  }
+}
