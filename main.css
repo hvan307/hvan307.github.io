@@ -377,7 +377,7 @@ small {
   }
 
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .modal {
@@ -458,6 +458,14 @@ small {
     margin: 1rem auto;
   }
 
+  .modal-button {
+    background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Skills */
   .container.skills {
     width: 90%;
   }
@@ -473,13 +481,34 @@ small {
     padding: 10px;
   }
 
+  .tile.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   p.title {
     font-size: 1rem;
     padding: 10px;
   }
 
   p.subtitle {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  /* Project 1 */
+  .tile.name-and-logo {
+    order: 1;
+  }
+
+  .tile.summary-and-links {
+    order: 2;
+  }
+
+  /* Project 2 */
+  figure.is-mobile-view {
+    width: 100%; 
+    margin: 1rem auto;
   }
 
   /* Contacts */
