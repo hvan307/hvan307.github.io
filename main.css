@@ -332,27 +332,23 @@ div.project-1 {
   flex-direction: column;
 }
 
-.container.contacts {
+/* Contacts */
+nav.contacts {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
-/* @media only screen and (min-width: 600px) {
-  .menu {
-    display: block;
+@media (max-width: 500px) {
+  body,
+  html,
+  header {
+    width: 100%;
+    height: 100%;
+    background-color: black(0, 0, 0, 0.671);
+  }
+  .hero {
     text-align: center;
+    width: 100%;
   }
-  .title {
-    text-align: center;
-  }
-  div {
-    cursor: url(images/kissclipart-selection-and-cursors-icon-cursor-icon-89ded83465d60f8c.png),auto;
-  }
- }  */
-/* Navbar brand */
-.title {
-  font-family: "Codystar", cursive;
-  font-weight: 800;
-  text-transform: uppercase;
-  position: relative;
 }
