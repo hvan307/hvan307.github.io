@@ -286,8 +286,8 @@ figure.profile-pic {
   margin: 1rem;
 }
 
-a#more-about-me:hover,
-a#more-about-me:focus,
+.modal-button:hover,
+.modal-button:focus,
 a.podcast:hover,
 a.podcast:focus {
   background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
@@ -298,11 +298,22 @@ a.podcast:focus {
 
 /* Skills */
 .container.skills {
+  padding: 1rem;
+  width: 90%;
+}
+
+div.icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 55%;
+}
+
+div.icon {
+  flex-direction: column;
+  padding: 3rem;
+  margin: 1rem 1.5rem;
+  text-align: center;
 }
 
 /* Projects */
@@ -316,9 +327,15 @@ div.projects {
 
 div.project {
   display: flex;
-  flex-direction: column;
   margin: 1rem;
   padding: 2rem;
+}
+
+
+div.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 article.tile {
@@ -327,6 +344,12 @@ article.tile {
   justify-content: center;
   align-content: center;
   text-align: center;
+}
+
+figure.hello-code,
+img.hello-code {
+  width: 350px !important;
+  align-self: center;
 }
 
 div #DevTru {
@@ -471,8 +494,18 @@ small {
   }
 
   /* Skills */
-  .container.skills {
-    width: 90%;
+  section.skills {
+    width: 100%;
+    padding: 10px;
+  }
+
+  div.icons {
+    width: 100%;
+  }
+
+  div.icon {
+    padding: 1.4rem;
+    margin-bottom: 1.5rem;
   }
 
   /* Projects */
