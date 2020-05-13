@@ -9,6 +9,9 @@ function main() {
   const modalButton = document.querySelector('.modal-button')
   const modal = document.querySelector('.modal')
   const closeButton = document.querySelector('.modal-close')
+  const icons = document.querySelector('.icons')
+  // const icons = document.querySelectorAll('i')
+  const spans = document.querySelectorAll('span')
 
   menuToggler.addEventListener('click', () => {
     menuToggler.classList.toggle('open')
@@ -48,11 +51,43 @@ function main() {
     modal.classList.toggle('is-active')
   })
 
+  let i
+  icons.addEventListener('mouseover', () => {
+    for (i = 0; i < spans.length; i++) {
+      spans[i].classList.add('is-visible')
+    }
+  })
+
+
+  icons.addEventListener('mouseout', () => {
+    for (i = 0; i < spans.length; i++) {
+      spans[i].classList.remove('is-visible')
+    }
+  })
+
+  // let i
+  // let j
+  // for (i = 0; i < icons.length; i++) {
+  //   icons[i].addEventListener('mouseover', () => {
+  //     for (j = 0; j < spans.length; j++) {
+  //       spans[j].classList.add('is-visible')
+  //     }
+  //   })
+  // }
+
+  // for (i = 0; i < icons.length; i++) {
+  //   icons[i].addEventListener('mouseout', () => {
+  //     for (j = 0; j < spans.length; j++) {
+  //       spans[j].classList.remove('is-visible')
+  //     }
+  //   })
+  // }
+
   AOS.init({
     easing: 'ease',
     duration: 1800,
     startEvent: 'DOMContentLoaded'
-  }) 
+  })
 }
 
 window.addEventListener('DOMContentLoaded', main)

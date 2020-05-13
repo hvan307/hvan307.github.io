@@ -12,14 +12,13 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: url("images/background-desktop.jpg")
-    no-repeat center fixed;
+  background: url("images/background-desktop.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
 section {
-  margin: 2rem;
-  padding: 2rem;
+  margin: 2rem 0;
+  padding: 2rem 0;
   width: 100%;
 }
 
@@ -64,6 +63,7 @@ h3:focus {
 p {
   font-family: "Lexend Zetta", sans-serif;
   font-size: 1rem;
+  margin: 20px auto;
 }
 
 .modal {
@@ -86,6 +86,15 @@ img {
 i {
   color: white;
   font-size: 4rem;
+}
+
+span {
+  display: none;
+}
+
+span.is-visible {
+  display: inline-block;
+  line-height: 1.6em;
 }
 
 i:hover,
@@ -216,8 +225,9 @@ i:focus {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 1rem;
+  padding: 1rem 0;
   user-select: none;
+  margin: 1rem 0;
 }
 
 h1.surname {
@@ -340,7 +350,7 @@ div.project-links {
 
 img.launch-icon {
   border: none !important;
-  margin: .5rem auto 0;
+  margin: 0.5rem auto 0;
 }
 
 .launch-icon#macman {
@@ -393,8 +403,7 @@ small {
   body {
     height: 100%;
     width: 100%;
-    background: url("images/background-mobile.jpg")
-      no-repeat center fixed;
+    background: url("images/background-mobile.jpg") no-repeat center fixed;
     background-size: cover;
   }
 
@@ -444,7 +453,7 @@ small {
   }
 
   figure.is-mobile-view {
-    width: 100%; 
+    width: 100%;
     margin: 1rem auto;
   }
 
@@ -468,11 +477,11 @@ small {
   }
 
   .open .bar.start {
-    transform: rotate(-45deg) translateX(-0.20rem) translateY(1.65rem);
+    transform: rotate(-45deg) translateX(-0.2rem) translateY(1.65rem);
   }
 
   .open .bar.end {
-    transform: rotate(-45deg) translateX(0.55rem) translateY(-.25rem);
+    transform: rotate(-45deg) translateX(0.55rem) translateY(-0.25rem);
   }
 
   /* Hero */
