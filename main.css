@@ -331,7 +331,7 @@ div.icon {
 }
 
 /* Projects */
-.container.projects {
+section.projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -536,7 +536,7 @@ small {
   }
 
   /* Projects */
-  .container.projects,
+  section.projects,
   article.tile {
     width: 100%;
   }
