@@ -63,7 +63,8 @@ h3:focus {
 p {
   font-family: "Lexend Zetta", sans-serif;
   font-size: 1rem;
-  margin: 20px auto;
+  margin: 20px 0;
+  /* width: 100%; */
 }
 
 .modal {
@@ -398,28 +399,7 @@ small {
   margin: 2rem;
 }
 
-/* Media query Ipad Pro and below */
-@media screen and (max-width: 1024px) {
-  /* Global */
-  body {
-    height: 100%;
-    width: 100%;
-    background: url("images/background-mobile.jpg") no-repeat center fixed;
-    background-size: cover;
-  }
-/* Header */
-/* Navbar menu */
-.nav-list {
-  flex-direction: column;
-  font-size: 2rem;
-  background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-}
-
-/* Media query iPhone 5/SE and below */
+/* Media query iPhone 5/SE and above */
 
 @media screen and (max-width: 600px) {
   /* Global */
@@ -564,7 +544,7 @@ small {
     padding: 10px;
   }
 
-  .tile.project {
+  div.project {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -588,9 +568,36 @@ small {
     order: 2;
   }
 
+  /* Project 4 */
+  figure.hello-code,
+  img.hello-code {
+    width: 100% !important;
+  }
+
   /* Contacts */
   #github-contact {
     font-size: 4rem;
   }
+}
+
+/* Media query Ipad Pro and below */
+@media screen and (max-width: 1024px) {
+  /* Global */
+  body {
+    height: 100%;
+    width: 100%;
+    background: url("images/background-mobile.jpg") no-repeat center fixed;
+    background-size: cover;
+  }
+/* Header */
+/* Navbar menu */
+.nav-list {
+  flex-direction: column;
+  font-size: 2rem;
+  background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 }
 
