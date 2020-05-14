@@ -160,7 +160,7 @@ i:focus {
 
 /* Burger */
 .menu-toggler {
-  position: absolute;
+  position: fixed;
   top: 5rem;
   right: 5rem;
   width: 5rem;
@@ -233,6 +233,7 @@ i:focus {
 
 h1.surname {
   animation: move 3s infinite;
+  width: 90%;
 }
 
 @keyframes move {
@@ -249,6 +250,7 @@ h1.surname {
 
 h1.name {
   animation: move-opposite 3s infinite;
+  width: 90%;
 }
 
 @keyframes move-opposite {
@@ -329,18 +331,18 @@ div.icon {
 }
 
 /* Projects */
-div.projects {
+.container.projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
-  margin: 1rem auto;
+  padding: 1rem 0;
+  margin: 1rem 0;
 }
 
 div.project {
   display: flex;
-  margin: 1rem;
-  padding: 2rem;
+  margin: 1rem 0;
+  padding: 2rem 0;
 }
 
 div.project-links {
