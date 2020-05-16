@@ -10,8 +10,8 @@ function main() {
   const modal = document.querySelector('.modal')
   const closeButton = document.querySelector('.modal-close')
   const icons = document.querySelector('.icons')
-  // const icons = document.querySelectorAll('i')
   const spans = document.querySelectorAll('span')
+  const backToTop = document.querySelector('div .back-to-top')
 
   menuToggler.addEventListener('click', () => {
     menuToggler.classList.toggle('open')
@@ -58,30 +58,20 @@ function main() {
     }
   })
 
-
   icons.addEventListener('mouseout', () => {
     for (i = 0; i < spans.length; i++) {
       spans[i].classList.remove('is-visible')
     }
   })
 
-  // let i
-  // let j
-  // for (i = 0; i < icons.length; i++) {
-  //   icons[i].addEventListener('mouseover', () => {
-  //     for (j = 0; j < spans.length; j++) {
-  //       spans[j].classList.add('is-visible')
-  //     }
-  //   })
-  // }
-
-  // for (i = 0; i < icons.length; i++) {
-  //   icons[i].addEventListener('mouseout', () => {
-  //     for (j = 0; j < spans.length; j++) {
-  //       spans[j].classList.remove('is-visible')
-  //     }
-  //   })
-  // }
+  window.addEventListener('scroll', () => { 
+    console.log('hello')
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      backToTop.style.display = 'block'
+    } else {
+      backToTop.style.display = 'none'
+    }
+  })
 
   AOS.init({
     easing: 'ease',

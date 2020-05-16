@@ -7,6 +7,7 @@
 
 html {
   font-family: "Lexend Zetta", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -98,6 +99,14 @@ span.is-visible {
   line-height: 1.6em;
 }
 
+.nav-link:hover,
+.nav-link:focus,
+div.back-to-top:hover,
+div.back-to-top:focus,
+.modal-button:hover,
+.modal-button:focus,
+a.podcast:hover,
+a.podcast:focus, 
 i:hover,
 i:focus {
   background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
@@ -113,7 +122,7 @@ i:focus {
   margin: 1rem auto;
 }
 
-/* Header */
+/* HEADER */
 .header {
   height: 100vh;
   width: 100%;
@@ -145,14 +154,6 @@ i:focus {
   padding: 1rem;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .top-nav.open {
   top: 0;
   border-radius: initial;
@@ -160,7 +161,7 @@ i:focus {
 
 /* Burger */
 .menu-toggler {
-  position: fixed;
+  position: absolute;
   top: 5rem;
   right: 5rem;
   width: 5rem;
@@ -222,7 +223,7 @@ i:focus {
   font-family: "Permanent Marker", cursive;
   font-size: 10rem;
   font-weight: bold;
-  background: linear-gradient(to top, rgb(141, 2, 233), rgb(255, 134, 215));
+  background: linear-gradient(to top, rgb(117, 0, 251), rgb(255, 0, 221));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -271,6 +272,25 @@ h1.name {
   text-shadow: 1px 1px 1px white;
 }
 
+/* MAIN */
+main {
+  position: relative;
+}
+
+/* Back to top */
+div.back-to-top {
+  display: none;
+  position: fixed;
+  scroll-behavior: smooth;
+  align-self: end;
+  text-align: center;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 4rem;
+  font-size: 3rem;
+}
+
 /* About Me */
 .container.about {
   width: 70%;
@@ -298,16 +318,6 @@ figure.profile-pic {
   color: black;
   padding: 1rem;
   margin: 1rem;
-}
-
-.modal-button:hover,
-.modal-button:focus,
-a.podcast:hover,
-a.podcast:focus {
-  background: linear-gradient(to top, rgb(143, 9, 253), rgb(255, 134, 215));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* Skills */
@@ -600,7 +610,7 @@ small {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+  }
 }
 
 
