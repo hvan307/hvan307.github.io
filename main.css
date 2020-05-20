@@ -390,6 +390,11 @@ img.hello-code {
   align-self: center;
 }
 
+article.hellocode-aside { 
+  justify-content: start;
+  padding-top: min(20%, 50px);
+}
+
 /* Contacts */
 nav.contacts {
   display: flex;
@@ -578,12 +583,6 @@ small {
 
   .tile.summary-and-links {
     order: 2;
-  }
-
-  /* Project 4 */
-  figure.hello-code,
-  img.hello-code {
-    width: 100% !important;
   }
 
   /* Contacts */
