@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: min(100%, 320px);
 }
 
 html {
@@ -386,7 +387,7 @@ article.tile {
 
 figure.hello-code,
 img.hello-code {
-  width: 350px !important;
+  width: min(350px, 320px);
   align-self: center;
 }
 
@@ -401,8 +402,13 @@ nav.contacts {
   flex-direction: row;
   justify-content: center;
 }
+
 a.contact-icon {
   padding: 1rem;
+}
+
+#twitter-contact {
+  font-size: 3rem;
 }
 
 /* Footer */
@@ -418,7 +424,7 @@ small {
 
 /* Media query iPhone 5/SE and above */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
   /* Global */
   body {
     height: 100%;
@@ -430,7 +436,11 @@ small {
   section {
     width: 80%;
     margin: 1rem auto;
-    padding: 10px;
+    padding: 10px !important;
+  }
+
+  div, article {
+    padding: 0 !important;
   }
 
   h2 {
@@ -549,22 +559,31 @@ small {
     padding: 1.4rem;
     margin-bottom: 1.5rem;
   }
+  
+  i {
+    font-size: 1.5rem;
+  }
 
   /* Projects */
   section.projects,
-  article.tile {
+  div.container {
     width: 100%;
   }
 
   div.projects,
   div.project {
-    padding: 10px;
+    margin: 10px 0;
   }
 
   div.project {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  div.tile {
+    margin: 10px auto !important;
+    padding: 0 10px !important;
   }
 
   p.title {
@@ -585,7 +604,29 @@ small {
     order: 2;
   }
 
+  /* Project 2 */
+  img.devtru-mobile {
+    width: 250px !important;
+  }
+
+  /* Project 3 */
+  img.nutrifix-mobile {
+    width: 250px !important;
+    height: 390px !important;
+  }
+  /* Project 4 */
+  figure.hello-code,
+  img.hello-code {
+    width: 250px !important;
+  }
+
+
+
   /* Contacts */
+  a.contact-icon {
+    padding: 10px;
+  }
+
   #github-contact {
     font-size: 4rem;
   }
