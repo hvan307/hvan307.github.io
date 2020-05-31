@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: min(100%, 320px);
+  /* width: max(100%, 320px); */
 }
 
 html {
@@ -436,11 +436,11 @@ small {
   section {
     width: 80%;
     margin: 1rem auto;
-    padding: 10px !important;
+    padding: 10px;
   }
 
   div, article {
-    padding: 0 !important;
+    padding: 0;
   }
 
   h2 {
@@ -556,7 +556,7 @@ small {
   }
 
   div.icon {
-    padding: 1.4rem;
+    padding: .5rem;
     margin-bottom: 1.5rem;
   }
   
@@ -582,8 +582,8 @@ small {
   }
 
   div.tile {
-    margin: 10px auto !important;
-    padding: 0 10px !important;
+    margin: 10px auto;
+    padding: 0 10px;
   }
 
   p.title {
@@ -606,18 +606,18 @@ small {
 
   /* Project 2 */
   img.devtru-mobile {
-    width: 250px !important;
+    width: 250px;
   }
 
   /* Project 3 */
   img.nutrifix-mobile {
-    width: 250px !important;
-    height: 390px !important;
+    width: 250px;
+    height: 390px;
   }
   /* Project 4 */
   figure.hello-code,
   img.hello-code {
-    width: 250px !important;
+    width: 250px;
   }
 
 
